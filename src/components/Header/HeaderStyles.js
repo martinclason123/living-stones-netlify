@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
 
 export const Section = styled.section`
   display: ${(props) => (props.flex ? "flex" : "initial")};
@@ -27,6 +28,29 @@ export const Section = styled.section`
   }
 `;
 
+const slideInAnimation = keyframes`
+0% { width: 0px; }
+100% { width: 40em; }
+`;
+
+export const SideBar = styled.div`
+  background-color: #ffffff;
+  height: 100vh;
+  z-index: 1000;
+  color: black;
+  transition: width 600ms ease-out;
+  position: sticky;
+  margin-left: auto;
+  top: 0;
+  left: 0;
+  animation-name: ${slideInAnimation};
+  animation-duration: 300ms;
+  width: 40em;
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
+  }
+`;
+
 export const NavBar = styled.nav`
   width: 50%;
   display: flex;
@@ -38,7 +62,26 @@ export const NavBar = styled.nav`
     display: none;
   }
 `;
+export const CloseButton = styled.button`
+  background: transparent;
+  margin-left: auto;
+  font-size: 6.4em;
+  font-weight: 700;
+  border: transparent;
+  display: block;
+  padding: 0.5em;
+`;
 
+export const MobileMenu = styled.nav`
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40em;
+  justify-content: center;
+  gap: 5em;
+  text-align: left;
+`;
 export const Container = styled.div`
   background: transparent;
   display: flex;
@@ -48,8 +91,8 @@ export const Container = styled.div`
 
 // Navigation Links
 export const NavLink = styled.span`
-  font-size: 3.2em;
-  color: #ffffff;
+  font-size: ${(props) => (props.size ? props.size : "3.2em")};
+  color: ${(props) => (props.color ? props.color : "#ffffff")};
   text-transform: uppercase;
   font-weight: 700;
 `;
