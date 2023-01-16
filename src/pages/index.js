@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Layout } from "../layout/Layout";
+import { Layout } from "@/layout/layout";
 import Hero from "@/components/Hero/Hero";
 // import { Inter } from "@next/font/google";
 
@@ -15,9 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
-        <Hero />
-      </Layout>
+      <Layout></Layout>
     </>
   );
 }
