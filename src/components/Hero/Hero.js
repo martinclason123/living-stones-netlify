@@ -13,7 +13,7 @@ import {
   DetailsP,
 } from "./HeroStyles";
 
-const Hero = (props) => (
+const Hero = () => (
   <Section>
     <Container>
       <ImageContainer width={"100%"} lgOnly>

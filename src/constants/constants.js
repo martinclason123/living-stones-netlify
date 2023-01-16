@@ -4,6 +4,8 @@ export const images = {
   heroSmall: "/images/hero-m.jpg",
   hamburger: "/images/Hamburger.svg",
   logoWhite: "images/logo-white.svg",
+  missionStatementD: "/images/Mission-Statement-d.png",
+  missionStatementM: "/images/Mission-Statement-m.png",
 };
 export const projects = [
   {

@@ -49,11 +49,10 @@ export const Section = styled.section`
   background: ${(props) =>
     props.background ? `${props.background}` : "transparent"};
   padding: ${(props) => (props.padding ? "32px 48px 0" : "0")};
-  margin: 0 auto;
+  margin: ${(props) => (props.margin ? props.margin : "0 auto")};
   max-width: 1920px;
   box-sizing: content-box;
-  position: relative;
-  overflow: hidden;
+  position: ${(props) => (props.position ? props.position : "relative")};
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 1.563vw;

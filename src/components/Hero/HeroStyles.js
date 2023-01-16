@@ -9,7 +9,7 @@ export const Section = styled.section`
   margin: 0 auto;
   max-width: 1920px;
   box-sizing: content-box;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 1;
