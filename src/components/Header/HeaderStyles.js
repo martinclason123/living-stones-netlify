@@ -70,6 +70,7 @@ export const CloseButton = styled.button`
   border: transparent;
   display: block;
   padding: 0.5em;
+  color: black;
 `;
 
 export const MobileMenu = styled.nav`
