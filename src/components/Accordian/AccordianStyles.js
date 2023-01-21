@@ -15,6 +15,10 @@ export const AccordianTitle = styled.div`
   padding: 0 1em;
   cursor: pointer;
 `;
+const slideInAnimation = keyframes`
+0% { width: 0px; }
+100% { width: 100%; }
+`;
 
 export const AccordianContent = styled.div`
   color: #000000;
@@ -34,8 +38,4 @@ export const AccordianP = styled.p`
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 1em;
   }
-`;
-const slideInAnimation = keyframes`
-0% { width: 0px; }
-100% { width: 100%; }
 `;
