@@ -4,6 +4,7 @@ import { keyframes } from "styled-components";
 export const AccordianItem = styled.li`
   border-bottom: 1px solid #ffffff;
   font-size: 1em;
+  padding: 0.25em 0;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 1em 0;
   }
