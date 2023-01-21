@@ -9,8 +9,8 @@ const OurBeliefs = () => {
     <Container>
       <Title>What we believe </Title>
       <BeliefsList>
-        {beliefs.map(({ title, content }) => (
-          <Accordion title={title} content={content} />
+        {beliefs.map(({ title, content }, index) => (
+          <Accordion key={index} title={title} content={content} />
         ))}
       </BeliefsList>
     </Container>

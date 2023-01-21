@@ -18,8 +18,8 @@ const Accordion = ({ title, content }) => {
       {isActive ? (
         <AccordianContent>
           {" "}
-          {content.map((paragraph) => {
-            return <AccordianP> {paragraph}</AccordianP>;
+          {content.map((paragraph, index) => {
+            return <AccordianP key={index}> {paragraph}</AccordianP>;
           })}
         </AccordianContent>
       ) : null}
