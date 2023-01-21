@@ -16,8 +16,8 @@ export const AccordianTitle = styled.div`
   cursor: pointer;
 `;
 const slideInAnimation = keyframes`
-0% { width: 0px; }
-100% { width: 100%; }
+0% { opacity: 0; }
+100% { opacity: 1; }
 `;
 
 export const AccordianContent = styled.div`
@@ -25,8 +25,7 @@ export const AccordianContent = styled.div`
   background: #ffffff;
   transition: "all 2s ease";
   border: 0.1em solid ${(props) => props.theme.colors.green};
-  animation-name: ${slideInAnimation};
-  animation-duration: 300ms;
+
   width: 100%;
 `;
 
@@ -35,6 +34,8 @@ export const AccordianP = styled.p`
   width: 80%;
   margin: 0 auto;
   padding: 0.5em 0;
+  animation-name: ${slideInAnimation};
+  animation-duration: 1s;
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 1em;
   }
