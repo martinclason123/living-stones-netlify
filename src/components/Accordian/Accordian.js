@@ -10,11 +10,13 @@ const Accordion = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <AccordianItem className="accordion-item">
-      <AccordianTitle onClick={() => setIsActive(!isActive)}>
-        <div>{title}</div>
-        <div>{isActive ? "-" : "+"}</div>
-      </AccordianTitle>
+    <>
+      <AccordianItem className="accordion-item">
+        <AccordianTitle onClick={() => setIsActive(!isActive)}>
+          <div>{title}</div>
+          <div>{isActive ? "-" : "+"}</div>
+        </AccordianTitle>
+      </AccordianItem>
       {isActive ? (
         <AccordianContent>
           {" "}
@@ -23,7 +25,7 @@ const Accordion = ({ title, content }) => {
           })}
         </AccordianContent>
       ) : null}
-    </AccordianItem>
+    </>
   );
 };
 
