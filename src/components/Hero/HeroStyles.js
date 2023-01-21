@@ -55,6 +55,7 @@ export const HeroSubtitle = styled.h3`
 
 export const DetailsDiv = styled.div`
   background: #ffffff;
+  margin-bottom: 1em;
   border: 1px solid ${(props) => props.theme.colors.grey};
   padding: 3em;
   border-radius: 4em;
@@ -81,6 +82,7 @@ export const DetailsTitle = styled.h1`
 export const DetailsP = styled.p`
   color: #000000;
   font-weight: 400;
+  white-space: nowrap;
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 2.6em;
   }

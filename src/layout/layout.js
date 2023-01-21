@@ -2,6 +2,7 @@ import Hero from "@/components/Hero/Hero";
 import MissionStatement from "@/components/MissionStatement/MissionStatement";
 import React from "react";
 import Location from "@/components/Location/Location";
+import OurBeliefs from "@/components/OurBeliefs/OurBeliefs";
 
 import Header from "../components/Header/Header";
 import { Container } from "./layoutStyles";
@@ -13,6 +14,7 @@ export const Layout = ({ children }) => {
       <Hero />
       <MissionStatement />
       <Location />
+      <OurBeliefs />
       <main>{children}</main>
       {/* <Footer /> */}
     </Container>

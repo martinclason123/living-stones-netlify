@@ -9,8 +9,6 @@ const Location = () => {
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></Map>
-
-      <h1>location</h1>
     </Section>
   );
 };

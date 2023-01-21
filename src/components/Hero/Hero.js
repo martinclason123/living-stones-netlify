@@ -45,8 +45,8 @@ const Hero = () => (
     <AbsoluteContent
       mobileTop="77em"
       mobileLeft="25em"
-      desktopTop="77em"
-      desktopLeft="132em"
+      desktopTop="75em"
+      desktopLeft="129em"
     >
       <DetailsDiv>
         <DetailsTitle>Worship Times</DetailsTitle>
