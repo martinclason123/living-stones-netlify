@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const DesktopBreak = styled.br`
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: none;
+  }
+`;
+export const MobileBreak = styled.br`
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
+  }
+`;
 export const ImageContainer = styled.div`
   width: ${(props) => (props.width ? `${props.width}` : "100%")};
   margin: ${(props) => (props.margin ? `${props.margin}` : "0")};
@@ -66,7 +76,8 @@ export const Section = styled.section`
 `;
 export const AbsoluteContent = styled.div`
   position: absolute;
-
+  background: ${(props) =>
+    props.background ? props.background : "transparent"};
   width: ${(props) => props.width};
 
   @media ${(props) => props.theme.breakpoints.sm} {

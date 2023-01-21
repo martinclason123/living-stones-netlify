@@ -5,9 +5,16 @@ import {
   ImageContainer,
   AbsoluteContent,
   Section,
+  DesktopBreak,
+  MobileBreak,
 } from "../../styles/GlobalComponents";
 
-import { Container } from "./MissionStatementStyles";
+import {
+  Container,
+  Title,
+  Stroke,
+  FloatingText,
+} from "./MissionStatementStyles";
 
 const MissionStatement = () => {
   return (
@@ -29,6 +36,16 @@ const MissionStatement = () => {
             className="image"
           ></Image>
         </ImageContainer>
+        <FloatingText desktopTop="26em" desktopLeft="5em" background="#ffffff">
+          <Title>
+            Bringing <Stroke>Jesus</Stroke> <DesktopBreak />
+            to <MobileBreak /> Generations <DesktopBreak /> by the{" "}
+            <MobileBreak />
+            Power of
+            <DesktopBreak />
+            the <Stroke>Holy Spirit</Stroke>
+          </Title>
+        </FloatingText>
       </Container>
     </Section>
   );
