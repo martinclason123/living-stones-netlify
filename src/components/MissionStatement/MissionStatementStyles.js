@@ -32,7 +32,7 @@ export const FloatingText = styled(AbsoluteContent)`
     margin: 0;
     text-align: center;
     top: 33em;
-    left: 7.5em;
+    left: 7em;
     background: transparent;
   }
 `;

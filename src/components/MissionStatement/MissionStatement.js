@@ -3,7 +3,6 @@ import Image from "next/image";
 import { images } from "../../constants/constants";
 import {
   ImageContainer,
-  AbsoluteContent,
   Section,
   DesktopBreak,
   MobileBreak,
@@ -41,7 +40,7 @@ const MissionStatement = () => {
             Bringing <Stroke>Jesus</Stroke> <DesktopBreak />
             to <MobileBreak /> Generations <DesktopBreak /> by the{" "}
             <MobileBreak />
-            Power of
+            Power of&nbsp;
             <DesktopBreak />
             the <Stroke>Holy Spirit</Stroke>
           </Title>
