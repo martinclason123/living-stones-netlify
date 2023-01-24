@@ -41,9 +41,24 @@ const Header = (props) => {
             X
           </CloseButton>
           <MobileMenu>
-            <Link href="#about">
+            <Link
+              href="#home"
+              onClick={() => {
+                setMobileToggle(false);
+              }}
+            >
               <NavLink color="black" size="5em">
-                About
+                Home
+              </NavLink>
+            </Link>
+            <Link
+              href="#about"
+              onClick={() => {
+                setMobileToggle(false);
+              }}
+            >
+              <NavLink color="black" size="5em">
+                Beliefs
               </NavLink>
             </Link>
             <Link href={"https://pushpay.com/g/livingstones"} target="_blank">
@@ -51,7 +66,7 @@ const Header = (props) => {
                 Give
               </NavLink>
             </Link>
-            <Link href={"#contact"} target="_blank">
+            <Link href={"#contact"}>
               <NavLink color="black" size="5em">
                 Contact
               </NavLink>
@@ -67,16 +82,22 @@ const Header = (props) => {
             src={images.logoWhite}
             alt="Living Stones Church Logo"
             className="image"
+            onClick={() => {
+              window.location.href = "#home";
+            }}
           ></Image>
         </SvgContainer>
         <NavBar>
           <Link href={"#about"}>
-            <NavLink>About</NavLink>
+            <NavLink>Beliefs</NavLink>
           </Link>
           <Link href={"https://pushpay.com/g/livingstones"} target="_blank">
             <NavLink>Give</NavLink>
           </Link>
-          <Link href={"#contact"} target="_blank">
+          <Link href={"#location"}>
+            <NavLink>Location</NavLink>
+          </Link>
+          <Link href={"#contact"}>
             <NavLink>Contact</NavLink>
           </Link>
         </NavBar>

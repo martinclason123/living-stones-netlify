@@ -14,7 +14,7 @@ import {
 } from "./HeroStyles";
 
 const Hero = () => (
-  <Section>
+  <Section id="home">
     <Container>
       <ImageContainer width={"100%"} lgOnly>
         <Image

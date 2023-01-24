@@ -32,6 +32,7 @@ export const ImageContainer = styled.div`
   }
 `;
 export const SvgContainer = styled.div`
+  cursor: pointer;
   width: ${(props) => (props.width ? `${props.width}` : "10%")};
   margin: ${(props) => (props.margin ? `${props.margin}` : "0")};
 
