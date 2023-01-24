@@ -34,3 +34,21 @@ export const BeliefsList = styled.ul`
     font-size: 2.4em;
   }
 `;
+
+export const Expand = styled.button`
+  color = ${(props) => props.theme.colors.grey}
+  font-weight: bold;
+  border: transparent;
+  background: transparent;
+  font-size: 3.2em;
+  display: block;
+  margin-left: auto;
+  margin-right: 8em;
+  cursor:pointer;
+  padding-bottom: 1em;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    
+    font-size: 2.4em;
+  }
+`;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AccordianItem,
   AccordianTitle,
@@ -6,18 +6,22 @@ import {
   AccordianP,
 } from "./AccordianStyles";
 
-const Accordion = ({ title, content }) => {
-  const [isActive, setIsActive] = useState(false);
+const Accordion = ({ title, content, expanded }) => {
+  const [isActive, setIsActive] = useState(expanded);
+  const [localActive, setLocalActive] = useState(false);
 
+  useEffect(() => {
+    setIsActive(expanded);
+  });
   return (
     <>
       <AccordianItem className="accordion-item">
-        <AccordianTitle onClick={() => setIsActive(!isActive)}>
+        <AccordianTitle onClick={() => setLocalActive(!localActive)}>
           <div>{title}</div>
-          <div>{isActive ? "-" : "+"}</div>
+          <div>{isActive || localActive ? "-" : "+"}</div>
         </AccordianTitle>
       </AccordianItem>
-      {isActive ? (
+      {isActive || localActive ? (
         <AccordianContent>
           {" "}
           {content.map((paragraph, index) => {
