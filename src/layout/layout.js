@@ -12,12 +12,11 @@ export const Layout = ({ children }) => {
     <Container>
       <Header />
 
-      <main>
-        <Hero />
-        <MissionStatement />
-        <Location />
-        <OurBeliefs />
-      </main>
+      <Hero />
+      <MissionStatement />
+      <Location />
+      <OurBeliefs />
+
       {/* <Footer /> */}
     </Container>
   );
