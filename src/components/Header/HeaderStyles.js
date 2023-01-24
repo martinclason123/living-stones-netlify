@@ -84,10 +84,12 @@ export const MobileMenu = styled.nav`
   text-align: left;
 `;
 export const Container = styled.div`
-  background: transparent;
+  background: ${(props) =>
+    props.background ? props.background : "transparent"};
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: background 600ms ease;
 `;
 
 // Navigation Links
