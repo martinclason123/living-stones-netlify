@@ -24,6 +24,7 @@ export const Stroke = styled.span`
 export const FloatingText = styled(AbsoluteContent)`
   border-radius: 4em;
   padding: 0 6em;
+  width: 72em;
   border: 1px solid ${(props) => props.theme.colors.grey};
   @media ${(props) => props.theme.breakpoints.sm} {
     border: transparent;
@@ -32,7 +33,8 @@ export const FloatingText = styled(AbsoluteContent)`
     margin: 0;
     text-align: center;
     top: 33em;
-    left: 7em;
+    left: 6.5em;
     background: transparent;
+    width: 52em;
   }
 `;
