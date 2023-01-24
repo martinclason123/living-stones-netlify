@@ -6,4 +6,5 @@ export const Container = styled.div`
   margin: auto;
   display: flex;
   flex-direction: column;
+  scroll-behavior: smooth;
 `;

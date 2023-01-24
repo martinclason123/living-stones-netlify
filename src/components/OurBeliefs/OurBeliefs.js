@@ -6,7 +6,7 @@ import { Title, Container, BeliefsList } from "./OurBeliefsStyles";
 import { beliefs } from "@/constants/beliefs";
 const OurBeliefs = () => {
   return (
-    <Container>
+    <Container id="about">
       <Title>What we believe </Title>
       <BeliefsList>
         {beliefs.map(({ title, content }, index) => (

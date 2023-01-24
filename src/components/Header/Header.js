@@ -41,7 +41,7 @@ const Header = (props) => {
             X
           </CloseButton>
           <MobileMenu>
-            <Link href={"#about"}>
+            <Link href="#about">
               <NavLink color="black" size="5em">
                 About
               </NavLink>

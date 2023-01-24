@@ -11,11 +11,13 @@ export const Layout = ({ children }) => {
   return (
     <Container>
       <Header />
-      <Hero />
-      <MissionStatement />
-      <Location />
-      <OurBeliefs />
-      <main>{children}</main>
+
+      <main>
+        <Hero />
+        <MissionStatement />
+        <Location />
+        <OurBeliefs />
+      </main>
       {/* <Footer /> */}
     </Container>
   );
