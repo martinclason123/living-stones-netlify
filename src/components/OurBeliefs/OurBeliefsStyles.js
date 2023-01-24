@@ -48,7 +48,7 @@ export const Expand = styled.button`
   padding-bottom: 1em;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    
+    margin-right: 1em;
     font-size: 2.4em;
   }
 `;
