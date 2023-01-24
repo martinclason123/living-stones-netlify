@@ -10,8 +10,8 @@ export const Title = styled.h1`
   text-align: left;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 3.83em;
-    margin-left: 2em;
+    font-size: 6em;
+    margin-left: 1em;
   }
 `;
 
@@ -19,7 +19,7 @@ export const Container = styled(Section)`
   width: 100%;
   margin-top: 8em;
   background: @media ${(props) => props.theme.breakpoints.sm} {
-    margin-top: 3em;
+    margin-top: 5em;
   }
 `;
 

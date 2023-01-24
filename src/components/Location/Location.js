@@ -1,5 +1,5 @@
 import { Section } from "../../styles/GlobalComponents";
-import { Map } from "./LocationStyles";
+import { Map, Address } from "./LocationStyles";
 const Location = () => {
   return (
     <Section width="100%" id="location">
@@ -9,6 +9,9 @@ const Location = () => {
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></Map>
+      <Address target={"_blank"} href="https://goo.gl/maps/mX519tLheNTrrxMm6">
+        18 W Lake St, Sand Lake, MI 49343
+      </Address>
     </Section>
   );
 };
