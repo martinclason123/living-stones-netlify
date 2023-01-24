@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { images } from "../../constants/constants";
 import { ImageContainer, SvgContainer } from "../../styles/GlobalComponents";
 import {
@@ -13,8 +13,21 @@ import {
   MobileMenu,
 } from "./HeaderStyles";
 
-const Header = () => {
+const Header = (props) => {
   const [mobileToggle, setMobileToggle] = useState(false);
+
+  // change nav color when scrolling
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 90) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+  });
 
   return (
     <Section>
@@ -47,7 +60,7 @@ const Header = () => {
         </SideBar>
       ) : null}
 
-      <Container>
+      <Container background={color ? "#c6d5cbed;" : "transparent"}>
         <SvgContainer desktop={"35em"} mobile="41em" margin={"2em 10em"}>
           <Image
             fill
