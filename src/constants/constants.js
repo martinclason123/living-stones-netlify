@@ -6,6 +6,7 @@ export const images = {
   logoWhite: "images/logo-white.svg",
   missionStatementD: "/images/Mission-Statement-d.png",
   missionStatementM: "/images/Mission-Statement-m.png",
+  contactPhoto: "/images/contact-photo.jpg",
 };
 export const projects = [
   {
