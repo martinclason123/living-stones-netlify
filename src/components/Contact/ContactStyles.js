@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Image from "next/image";
+
 const themeColor = (props) => props.theme.colors.green;
 const textColor = (props) => props.theme.colors.grey;
 
@@ -8,7 +10,8 @@ import { Title } from "../MissionStatement/MissionStatementStyles";
 export const FormSection = styled(Section)`
   width: 100%;
   display: flex;
-  padding-top: 10em;
+  padding: 10em 0;
+  position relative;
 `;
 export const FormContainer = styled.div`
   width: 65%;
@@ -83,4 +86,27 @@ export const FormTitle = styled(Title)`
 
 export const FormImageContainer = styled(ImageContainer)`
   width: 50%;
+  border-top-right-radius: 80px 80px;
+`;
+
+export const StyledImage = styled(Image)`
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+`;
+
+export const SubmitButton = styled.button`
+  position: absolute;
+  bottom: 5.2em;
+  left: 18em;
+  font-size: 2.4em;
+  border: 2px solid #c6d5cb;
+  background-color: #ffffff;
+  padding: 0.5em 2em;
+  border-radius: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background: #c6d5cb;
+  }
 `;

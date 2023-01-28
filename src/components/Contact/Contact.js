@@ -1,55 +1,52 @@
-import { useRef } from "react";
-import Image from "next/image";
 import { images } from "../../constants/constants";
+import FormField from "../FormFields/FormFields";
 import {
   FormSection,
   FormContainer,
   Form,
-  InputContainer,
   Label,
-  TextInput,
   TextArea,
   TextAreaContainer,
   FormTitle,
   FormImageContainer,
+  StyledImage,
+  SubmitButton,
 } from "./ContactStyles";
 
+const includedFields = [
+  { type: "text", label: "Name", id: "name" },
+  { type: "text", label: "Email", id: "email" },
+  { type: "text", label: "Phone", id: "phone" },
+];
 const Contact = () => {
-  const ref = useRef(null);
-  const handleClick = () => {
-    ref.current.focus();
-  };
   return (
     <>
-      <FormSection>
+      <FormSection id="contact">
         <FormContainer>
           <Form>
             <FormTitle>Contact Us</FormTitle>
+            {includedFields.map((data, index) => (
+              <FormField
+                type={data.type}
+                label={data.label}
+                id={data.id}
+                key={index}
+              />
+            ))}
 
-            <InputContainer onClick={handleClick}>
-              <Label htmlFor="name">Name</Label>
-              <TextInput ref={ref} type={"text"} id="name"></TextInput>
-            </InputContainer>
-            <InputContainer onClick={handleClick}>
-              <Label htmlFor="name">Email</Label>
-              <TextInput ref={ref} type={"text"} id="email"></TextInput>
-            </InputContainer>
-            <InputContainer onClick={handleClick}>
-              <Label htmlFor="name">Phone</Label>
-              <TextInput ref={ref} type={"text"} id="phone"></TextInput>
-            </InputContainer>
-            <TextAreaContainer onClick={handleClick}>
+            <TextAreaContainer>
               <Label htmlFor="name">Message</Label>
-              <TextArea ref={ref} type={"textarea"} id="message"></TextArea>
+              <TextArea type={"textarea"} id="message"></TextArea>
             </TextAreaContainer>
+            <SubmitButton>Submit</SubmitButton>
           </Form>
           <FormImageContainer width={"50%"} lgOnly>
-            <Image
+            <StyledImage
               fill
               src={images.contactPhoto}
               alt="Young woman"
               className="image"
-            ></Image>
+            ></StyledImage>
           </FormImageContainer>
         </FormContainer>
       </FormSection>
