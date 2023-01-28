@@ -21,6 +21,10 @@ export const FormContainer = styled.div`
   padding: 10em;
   border-radius: 5em;
   gap: 1em;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 90%;
+    padding: 5em 5em 10em 5em;
+  }
 `;
 
 export const Form = styled.div`
@@ -28,6 +32,9 @@ export const Form = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3em;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+  }
 `;
 
 export const InputContainer = styled.div`
@@ -109,4 +116,21 @@ export const SubmitButton = styled.button`
     color: #fff;
     background: #c6d5cb;
   }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    color: #fff;
+    background: #c6d5cb;
+    left: 9.5em;
+  }
+`;
+
+export const InvalidForm = styled.p`
+  color: red;
+  font-size: 1.8em;
+  margin: 0;
+  padding: 0;
+`;
+
+export const StatusMessage = styled.h1`
+  font-size: 3.2em;
+  color: ${themeColor};
 `;
