@@ -12,6 +12,7 @@ export const FormSection = styled(Section)`
   display: flex;
   padding: 10em 0;
   position relative;
+  overflow: hidden;
 `;
 export const FormContainer = styled.div`
   width: 65%;
