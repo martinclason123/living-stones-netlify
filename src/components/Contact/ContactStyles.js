@@ -95,6 +95,7 @@ export const TextArea = styled.textarea`
 `;
 
 export const FormTitle = styled(Title)`
+  color: ${(props) => props.theme.colors.green};
   margin: 0;
 `;
 
@@ -113,7 +114,7 @@ export const SubmitButton = styled.button`
   bottom: 5.2em;
   left: 18em;
   font-size: 2.4em;
-  border: 2px solid #c6d5cb;
+  border: 2px solid ${(props) => props.theme.colors.green};
   background-color: #ffffff;
   padding: 0.5em 2em;
   border-radius: 1em;
@@ -121,11 +122,11 @@ export const SubmitButton = styled.button`
   cursor: pointer;
   &:hover {
     color: #fff;
-    background: #c6d5cb;
+    background: ${(props) => props.theme.colors.green};
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     color: #fff;
-    background: #c6d5cb;
+    background: ${(props) => props.theme.colors.green};
     left: 9.5em;
   }
 `;

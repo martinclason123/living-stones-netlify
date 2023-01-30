@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+
 import React, { useEffect, useState } from "react";
 import { images } from "../../constants/constants";
 import { ImageContainer, SvgContainer } from "../../styles/GlobalComponents";
@@ -75,7 +76,7 @@ const Header = (props) => {
         </SideBar>
       ) : null}
 
-      <Container background={color ? "#c6d5cbed;" : "transparent"}>
+      <Container background={color ? `#a3afa7` : "transparent"}>
         <SvgContainer desktop={"35em"} mobile="41em" margin={"2em 10em"}>
           <Image
             fill

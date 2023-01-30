@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   font-size: 8em;
-  color: #c6d5cb;
+  color: ${(props) => props.theme.colors.green};
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 4.75em;
   }
