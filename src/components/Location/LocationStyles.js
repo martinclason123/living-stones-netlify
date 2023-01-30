@@ -6,7 +6,7 @@ export const Map = styled.iframe`
   height: 84.4em;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 62em;
+    width: 90vw;
     height: 46.5em;
     margin: 0 auto;
   }
