@@ -108,7 +108,7 @@ const Contact = () => {
                     ))}
 
                     <TextAreaContainer>
-                      <Label htmlFor="name">Message</Label>
+                      <Label htmlFor="message">Message</Label>
                       <TextArea
                         type={"textarea"}
                         id="message"

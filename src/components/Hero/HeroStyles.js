@@ -41,7 +41,7 @@ export const HeroTitle = styled.h1`
     width: 6em;
   }
 `;
-export const HeroSubtitle = styled.h3`
+export const HeroSubtitle = styled.h2`
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;

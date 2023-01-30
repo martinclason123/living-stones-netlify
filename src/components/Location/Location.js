@@ -8,6 +8,7 @@ const Location = () => {
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
+        title="Google maps link to church address"
       ></Map>
       <Address target={"_blank"} href="https://goo.gl/maps/mX519tLheNTrrxMm6">
         18 W Lake St, Sand Lake, MI 49343
