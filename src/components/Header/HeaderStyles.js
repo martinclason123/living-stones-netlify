@@ -98,6 +98,11 @@ export const NavLink = styled.span`
   color: ${(props) => (props.color ? props.color : "#ffffff")};
   text-transform: uppercase;
   font-weight: 700;
+  transition: all 1s ease;
+  &:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+  }
 `;
 
 /// DropDown Contact
