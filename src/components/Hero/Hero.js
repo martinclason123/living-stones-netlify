@@ -22,6 +22,7 @@ const Hero = () => (
           src={images.hero}
           alt="Man preaching"
           className="image"
+          priority
         ></Image>
       </ImageContainer>
       <ImageContainer width={"100%"} smOnly>
@@ -30,6 +31,7 @@ const Hero = () => (
           src={images.heroSmall}
           alt="Man preaching"
           className="image"
+          priority
         ></Image>
       </ImageContainer>
     </Container>
