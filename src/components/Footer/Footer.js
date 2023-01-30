@@ -1,5 +1,13 @@
 import React from "react";
-import { FooterItem, FooterList, FooterSection } from "./FooterStyles";
+import Image from "next/image";
+import { SvgContainer } from "@/styles/GlobalComponents";
+import { images } from "@/constants/constants";
+import {
+  FooterItem,
+  FooterList,
+  FooterSection,
+  FooterText,
+} from "./FooterStyles";
 
 const Footer = () => {
   return (
@@ -17,6 +25,20 @@ const Footer = () => {
         <FooterItem>|</FooterItem>
         <FooterItem>P.O. BOX 311, Sand Lake, MI 49343</FooterItem>
       </FooterList>
+      <SvgContainer desktop={"35em"} mobile="41em" margin={"2em auto"}>
+        <Image
+          fill
+          src={images.logoWhite}
+          alt="Living Stones Church Logo"
+          className="image"
+          onClick={() => {
+            window.location.href = "#home";
+          }}
+        ></Image>
+      </SvgContainer>
+      <FooterText>
+        {new Date().getFullYear()} Living Stones Church, All Rights Reserved
+      </FooterText>
     </FooterSection>
   );
 };

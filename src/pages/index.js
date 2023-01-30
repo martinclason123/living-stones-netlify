@@ -14,9 +14,9 @@ export default function Home() {
         <meta
           name="description"
           content="Bringing Jesus
-to Generations
-by the Power of 
-the Holy Spirit"
+          to Generations
+          by the Power of 
+          the Holy Spirit"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Living Stones Church" />

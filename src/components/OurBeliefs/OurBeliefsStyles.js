@@ -36,7 +36,7 @@ export const BeliefsList = styled.ul`
 `;
 
 export const Expand = styled.button`
-  color = ${(props) => props.theme.colors.grey}
+  color: ${(props) => props.theme.colors.grey};
   font-weight: bold;
   border: transparent;
   background: transparent;
@@ -44,8 +44,10 @@ export const Expand = styled.button`
   display: block;
   margin-left: auto;
   margin-right: 8em;
-  cursor:pointer;
+  cursor: pointer;
   padding-bottom: 1em;
+  text-decoration: underline;
+  text-underline-position: under;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-right: 1em;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { AbsoluteContent } from "@/styles/GlobalComponents";
+import { Section } from "@/styles/GlobalComponents";
 
 export const Container = styled.div`
   background: transparent;
@@ -25,6 +26,7 @@ export const FloatingText = styled(AbsoluteContent)`
   border-radius: 4em;
   padding: 0 6em;
   width: 72em;
+
   border: 1px solid ${(props) => props.theme.colors.grey};
   @media ${(props) => props.theme.breakpoints.sm} {
     border: transparent;
@@ -36,5 +38,10 @@ export const FloatingText = styled(AbsoluteContent)`
     left: 5.6em;
     background: transparent;
     width: 52em;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    -webkit-box-shadow: -5px 7px 14px 0px rgba(173, 164, 173, 0.51);
+    -moz-box-shadow: -5px 7px 14px 0px rgba(173, 164, 173, 0.51);
+    box-shadow: -5px 7px 14px 0px rgba(173, 164, 173, 0.51);
   }
 `;

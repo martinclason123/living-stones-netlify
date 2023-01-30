@@ -65,6 +65,12 @@ export const DetailsDiv = styled.div`
     text-align: left;
     padding: 3em;
   }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    -webkit-box-shadow: -5px 7px 14px 0px rgba(173, 164, 173, 0.51);
+    -moz-box-shadow: -5px 7px 14px 0px rgba(173, 164, 173, 0.51);
+    box-shadow: -5px 7px 14px 0px rgba(173, 164, 173, 0.51);
+  }
 `;
 
 export const DetailsTitle = styled.h1`

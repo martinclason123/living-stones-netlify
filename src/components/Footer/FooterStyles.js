@@ -7,6 +7,7 @@ export const FooterSection = styled(Section)`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 `;
 
 export const FooterList = styled.ul`
@@ -27,4 +28,9 @@ export const FooterItem = styled.li`
     font-size: 1.6em;
     white-space: nowrap;
   }
+`;
+
+export const FooterText = styled.p`
+  font-size: 2em;
+  margin-bottom: 2em;
 `;

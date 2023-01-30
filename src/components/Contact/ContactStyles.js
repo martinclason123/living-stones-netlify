@@ -22,9 +22,15 @@ export const FormContainer = styled.div`
   padding: 10em;
   border-radius: 5em;
   gap: 1em;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 90%;
     padding: 5em 5em 10em 5em;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    -webkit-box-shadow: -5px 7px 14px 0px rgba(173, 164, 173, 0.51);
+    -moz-box-shadow: -5px 7px 14px 0px rgba(173, 164, 173, 0.51);
+    box-shadow: -5px 7px 14px 0px rgba(173, 164, 173, 0.51);
   }
 `;
 
