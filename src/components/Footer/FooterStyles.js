@@ -14,6 +14,7 @@ export const FooterList = styled.ul`
   display: flex;
   padding: 4em;
   gap: 1em;
+  justify-content: center;
 `;
 
 export const FooterItem = styled.li`

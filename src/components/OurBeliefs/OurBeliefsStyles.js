@@ -11,7 +11,8 @@ export const Title = styled.h1`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 6em;
-    margin-left: 1em;
+    margin-left: 0em;
+    text-align: center;
   }
 `;
 

@@ -67,7 +67,12 @@ const Header = (props) => {
                 Give
               </NavLink>
             </Link>
-            <Link href={"#contact"}>
+            <Link
+              href={"#contact"}
+              onClick={() => {
+                setMobileToggle(false);
+              }}
+            >
               <NavLink color="black" size="5em">
                 Contact
               </NavLink>
