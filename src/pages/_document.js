@@ -45,15 +45,10 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
           />
-          {/* <link
+          <link
             rel="stylesheet"
             href="https://use.typekit.net/tkk4opg.css"
-          ></link> */}
-          <link
-            rel="preload"
-            href="https://use.typekit.net/tkk4opg.css"
-            as="style"
-          />
+          ></link>
         </Head>
         <body>
           <Main />
