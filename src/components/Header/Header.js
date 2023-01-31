@@ -81,7 +81,7 @@ const Header = (props) => {
         </SideBar>
       ) : null}
 
-      <Container background={color ? `#a3afa7` : "transparent"}>
+      <Container background={color ? `#c6d5cb` : "transparent"}>
         <SvgContainer desktop={"35em"} mobile="41em" margin={"2em 10em"}>
           <Image
             fill

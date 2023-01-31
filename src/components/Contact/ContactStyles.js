@@ -84,6 +84,8 @@ export const TextArea = styled.textarea`
   font-size: 2.4em;
   color: ${textColor};
   padding-left: 0.5em;
+  padding-top: 0.5em;
+
   border: 2px solid ${themeColor};
   width: 100%;
   border-radius: 0.5em;
@@ -115,6 +117,7 @@ export const SubmitButton = styled.button`
   left: 18em;
   font-size: 2.4em;
   border: 2px solid ${(props) => props.theme.colors.green};
+  color: ${(props) => props.theme.colors.grey};
   background-color: #ffffff;
   padding: 0.5em 2em;
   border-radius: 1em;
