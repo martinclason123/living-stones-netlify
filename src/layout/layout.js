@@ -14,7 +14,7 @@ export const Layout = ({ children }) => {
       <Header />
       <Hero />
       <MissionStatement />
-      {/* <Location /> */}
+      <Location />
       <OurBeliefs />
       <Contact />
       <Footer />

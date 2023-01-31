@@ -28,6 +28,7 @@ export const FloatingText = styled(AbsoluteContent)`
   border-radius: 4em;
   padding: 0 6em;
   width: 72em;
+  white-space: nowrap;
 
   border: 1px solid ${(props) => props.theme.colors.grey};
   @media ${(props) => props.theme.breakpoints.sm} {

@@ -32,6 +32,7 @@ const Hero = () => (
           alt="Man preaching"
           className="image"
           priority
+          eager
         ></Image>
       </ImageContainer>
       {/* <picture>
