@@ -34,6 +34,10 @@ export default class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>
           <link
             rel="preconnect"
+            href="https://use.typekit.net/tkk4opg.css"
+          ></link>
+          <link
+            rel="preconnect"
             href="https://fonts.gstatic.com"
             crossorigin
           ></link>
