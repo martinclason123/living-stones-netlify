@@ -114,3 +114,5 @@ export const LeftSection = styled.div`
     margin: 0 auto;
   }
 `;
+
+const HeroImage = styled.picture``;
