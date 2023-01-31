@@ -34,6 +34,10 @@ const Hero = () => (
           priority
         ></Image>
       </ImageContainer>
+      {/* <picture>
+        <source srcset={images.hero} media="(min-width: 641px)" />
+        <img src={images.heroSmall} alt="Man preaching" />
+      </picture> */}
     </Container>
     <AbsoluteContent
       mobileTop="20em"
