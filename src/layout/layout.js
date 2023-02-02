@@ -7,6 +7,7 @@ import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Header from "../components/Header/Header";
 import { Container } from "./layoutStyles";
+import Testimony from "@/components/Testimony/Testimony";
 
 export const Layout = ({ children }) => {
   return (
@@ -16,6 +17,7 @@ export const Layout = ({ children }) => {
       <MissionStatement />
       <Location />
       <OurBeliefs />
+      <Testimony />
       <Contact />
       <Footer />
     </Container>

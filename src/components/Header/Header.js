@@ -68,6 +68,16 @@ const Header = (props) => {
               </NavLink>
             </Link>
             <Link
+              href={"#testimony"}
+              onClick={() => {
+                setMobileToggle(false);
+              }}
+            >
+              <NavLink color="black" size="5em">
+                Testimony
+              </NavLink>
+            </Link>
+            <Link
               href={"#contact"}
               onClick={() => {
                 setMobileToggle(false);
@@ -102,6 +112,9 @@ const Header = (props) => {
           </Link>
           <Link href={"#location"}>
             <NavLink>Location</NavLink>
+          </Link>
+          <Link href={"#testimony"}>
+            <NavLink>Testimony</NavLink>
           </Link>
           <Link href={"#contact"}>
             <NavLink>Contact</NavLink>

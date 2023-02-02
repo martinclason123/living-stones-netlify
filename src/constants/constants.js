@@ -7,6 +7,8 @@ export const images = {
   missionStatementD: "/images/Mission-Statement-d.png",
   missionStatementM: "/images/Mission-Statement-m.png",
   contactPhoto: "/images/contact-photo.jpg",
+  testimonyD: "/images/testimony-d.jpg",
+  testimonyM: "/images/testimony-m.jpg",
 };
 export const projects = [
   {

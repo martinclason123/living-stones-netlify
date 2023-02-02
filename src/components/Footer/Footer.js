@@ -37,7 +37,7 @@ const Footer = () => {
         ></Image>
       </SvgContainer>
       <FooterText>
-        {new Date().getFullYear()} Living Stones Church, All Rights Reserved
+        {new Date().getFullYear()} Living Stones Ministries, All Rights Reserved
       </FooterText>
     </FooterSection>
   );
