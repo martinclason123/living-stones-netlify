@@ -6,7 +6,7 @@ export const Title = styled.h1`
   color: #ffffff;
   -webkit-text-stroke: 0.03em #7d7f7d;
   text-transform: uppercase;
-  margin: 0 0 1em 2.3em;
+  margin: 0 0 0.5em 2.3em;
   text-align: left;
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -19,6 +19,8 @@ export const Title = styled.h1`
 export const Container = styled(Section)`
   width: 100%;
   margin-top: 8em;
+  margin-bottom: 8em;
+
   background: @media ${(props) => props.theme.breakpoints.sm} {
     margin-top: 5em;
   }

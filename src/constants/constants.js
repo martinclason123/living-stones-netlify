@@ -9,6 +9,7 @@ export const images = {
   contactPhoto: "/images/contact-photo.jpg",
   testimonyD: "/images/testimony-d.jpg",
   testimonyM: "/images/testimony-m.jpg",
+  divider: "/images/divider.svg",
 };
 export const projects = [
   {

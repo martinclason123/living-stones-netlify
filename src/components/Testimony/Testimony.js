@@ -12,7 +12,7 @@ import {
 const Testimony = () => {
   return (
     <TestimonySection id="testimony">
-      <ImageContainer width={"60%"} lgOnly>
+      <ImageContainer width={"45%"} lgOnly>
         <Image
           fill
           src={images.testimonyD}
