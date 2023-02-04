@@ -31,7 +31,8 @@ export const BeliefsList = styled.ul`
   margin: 0 auto;
   font-size: 5.2em;
   color: #ffffff;
-  background: ${(props) => props.theme.colors.green};
+  font-weight: bold;
+  background: ${(props) => props.theme.colors.grey};
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 25em;
     font-size: 2.4em;

@@ -15,6 +15,9 @@ export const AccordianTitle = styled.div`
   justify-content: space-between;
   padding: 0 1em;
   cursor: pointer;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 1.4em;
+  }
 `;
 const slideInAnimation = keyframes`
 0% { opacity: 0; }
@@ -25,7 +28,7 @@ export const AccordianContent = styled.div`
   color: #000000;
   background: #ffffff;
   transition: "all 2s ease";
-  border: 0.1em solid ${(props) => props.theme.colors.green};
+  border: 0.1em solid ${(props) => props.theme.colors.grey};
 
   width: 100%;
 `;

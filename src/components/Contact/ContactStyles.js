@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 
-const themeColor = (props) => props.theme.colors.green;
+const themeColor = (props) => props.theme.colors.grey;
 const textColor = (props) => props.theme.colors.grey;
 
 import { ImageContainer, Section } from "@/styles/GlobalComponents";
@@ -17,7 +17,7 @@ export const FormSection = styled(Section)`
 export const FormContainer = styled.div`
   width: 65%;
   margin: 0 auto;
-  border: 2px solid ${(props) => props.theme.colors.green};
+  border: 2px solid ${(props) => props.theme.colors.grey};
   display: flex;
   padding: 10em;
   border-radius: 5em;
@@ -97,7 +97,7 @@ export const TextArea = styled.textarea`
 `;
 
 export const FormTitle = styled(Title)`
-  color: ${(props) => props.theme.colors.green};
+  color: ${(props) => props.theme.colors.grey};
   margin: 0;
 `;
 
@@ -116,7 +116,7 @@ export const SubmitButton = styled.button`
   bottom: 5.2em;
   left: 18em;
   font-size: 2.4em;
-  border: 2px solid ${(props) => props.theme.colors.green};
+  border: 2px solid ${(props) => props.theme.colors.grey};
   color: ${(props) => props.theme.colors.grey};
   background-color: #ffffff;
   padding: 0.5em 2em;
@@ -129,7 +129,8 @@ export const SubmitButton = styled.button`
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     color: #fff;
-    background: ${(props) => props.theme.colors.green};
+    background: ${(props) => props.theme.colors.grey};
+    border: transparent;
     left: 9.5em;
   }
 `;
