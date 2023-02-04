@@ -21,7 +21,7 @@ export const TextContainer = styled.div`
   }
 `;
 export const Title = styled.h1`
-  font-size: 8em;
+  font-size: 7em;
   white-space: nowrap;
   color: #ffffff;
   -webkit-text-stroke: 0.03em #7d7f7d;
@@ -38,8 +38,9 @@ export const Title = styled.h1`
 `;
 
 export const TestimonyP = styled.p`
-  font-size: 2.4em;
+  font-size: 2.9em;
   max-width: 96%;
+
   color: #000000;
   font-weight: 500;
   margin: 0 auto;
