@@ -46,7 +46,10 @@ export const TestimonyP = styled.p`
   margin: 0 auto;
   text-align: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
-    text-align: center;
+    width: 95%;
+    text-align: justify;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 3.6em;
   }
 `;
