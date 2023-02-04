@@ -14,13 +14,13 @@ export const Map = styled.iframe`
 export const Address = styled.a`
   text-align: center;
   color: #ffffff;
-  background: ${(props) => props.theme.colors.green};
+  background: ${(props) => props.theme.colors.grey};
   margin: 0;
   padding: 1em;
   font-size: 3.2em;
   display: block;
   cursor: pointer;
-
+  font-weight: bold;
   @media ${(props) => props.theme.breakpoints.sm} {
   }
 `;
