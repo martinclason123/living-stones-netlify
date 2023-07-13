@@ -23,7 +23,7 @@ const Footer = () => {
           </a>
         </FooterItem>
         <FooterItem>|</FooterItem>
-        <FooterItem>P.O. BOX 311, Sand Lake, MI 49343</FooterItem>
+        <FooterItem>17322 Cedar Springs Ave, Sand Lake, MI 49343</FooterItem>
       </FooterList>
       <SvgContainer desktop={"35em"} mobile="41em" margin={"2em auto"}>
         <Image
