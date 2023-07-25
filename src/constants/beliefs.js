@@ -76,6 +76,13 @@ export const beliefs = [
       "'We, according to His promise, look for new heavens and a new earth wherein dwelleth righteousness.” (2 Peter 3:13; Revelation 21, 22).'",
     ],
   },
+  {
+    title: "Marriage, Gender, Sexuality",
+    content: [
+      `We believe that God wonderfully and immutably creates each person as male or female. These two distinct, complementary genders together reflect the image and nature of God. (Genesis 1:26-27.) Rejection of one's biological sex is a rejection of the image of God within that person. We believe that the term "marriage" has only one meaning: the uniting of one man and one woman in a single, exclusive union, as delineated in Scripture. (Genesis 2:18-25.) We believe that God intends sexual intimacy to occur only between a natural born man and a natural born woman who are married to each other. (1 Corinthians 6:18; 7:2-5; Hebrews 13:4.) We believe that God has commanded that no intimate sexual activity be engaged in outside of a marriage between a man and a woman. `,
+      `We believe that any form of sexual immorality (including adultery, fornication, homosexual behavior, bisexual conduct, bestiality, incest, and use of pornography) is sinful and offensive to God. (Matt 15:18-20; 1 Cor 6:9-10.) We believe that in order to preserve the function and integrity of Living Stones as the local Body of Christ, and to provide a biblical role model to the saints and the community, it is imperative that all persons employed by Living Stones in any capacity, or who serve as volunteers, agree to and abide by this Statement on Marriage, Gender, and Sexuality. (Matt 5:16; Phil 2:14-16; 1 Thess 5:22.) We believe that God offers redemption and restoration to all who confess and forsake their sin, seeking His mercy and forgiveness through Jesus Christ. (Acts 3:19-21; Rom 10:9-10; 1 Cor 6:9-11.) We believe that every person must be afforded compassion, love, kindness, respect, and dignity. (Mark 12:28-31; Luke 6:31.) Hateful and harassing behavior or attitudes directed toward any individual are to be repudiated and are not in accord with Scripture nor the doctrines of Living Stones.`,
+    ],
+  },
 ];
 export const theApostlesCreed = {
   title: "THE APOSTLES CREED",

@@ -1,14 +1,20 @@
 export const images = {
   logoWhite: "images/logo-white.svg",
-  hero: "/images/hero.jpg",
-  heroSmall: "/images/hero-m.jpg",
+  hero: "https://res.cloudinary.com/dflipazxf/image/upload/v1690242358/living%20stones%20church/ls-hero-d_t7ddgk.jpg",
+  heroSmall:
+    "https://res.cloudinary.com/dflipazxf/image/upload/v1690242510/living%20stones%20church/ls-hero-m_twaqzx.jpg",
   hamburger: "/images/Hamburger.svg",
   logoWhite: "images/logo-white.svg",
-  missionStatementD: "/images/Mission-Statement-d.png",
-  missionStatementM: "/images/Mission-Statement-m.png",
-  contactPhoto: "/images/contact-photo.jpg",
-  testimonyD: "/images/testimony-d.jpg",
-  testimonyM: "/images/testimony-m.jpg",
+  missionStatementD:
+    "https://res.cloudinary.com/dflipazxf/image/upload/v1690241157/living%20stones%20church/ls-ms-d_rsbfg7.avif",
+  missionStatementM:
+    "https://res.cloudinary.com/dflipazxf/image/upload/v1690241201/living%20stones%20church/ls-ms-m_1_m89cvb.png",
+  contactPhoto:
+    "https://res.cloudinary.com/dflipazxf/image/upload/v1690243299/living%20stones%20church/contact-photo_w2py7k.jpg",
+  testimonyD:
+    "https://res.cloudinary.com/dflipazxf/image/upload/v1690242828/living%20stones%20church/ls-test-d_eyq2s1.jpg",
+  testimonyM:
+    "https://res.cloudinary.com/dflipazxf/image/upload/v1690242828/living%20stones%20church/ls-test-m_saptbu.jpg",
   divider: "/images/divider.svg",
 };
 export const projects = [

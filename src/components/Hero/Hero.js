@@ -41,7 +41,7 @@ const Hero = () => (
       </picture> */}
     </Container>
     <AbsoluteContent
-      mobileTop="20em"
+      mobileTop="8em"
       mobileLeft="2em"
       desktopTop="10em"
       desktopLeft="12em"
